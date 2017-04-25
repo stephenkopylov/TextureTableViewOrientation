@@ -63,8 +63,6 @@
     
     ASInsetLayoutSpec *insetSpec2 = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(8.f, 0.f, 8.f, 0.f) child:hStackSpec];
     
-    insetSpec2.style.flexBasis = ASDimensionMakeWithFraction(1.f);
-    
     return insetSpec2;
 }
 
