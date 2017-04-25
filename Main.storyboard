@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="voF-On-k7G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mLK-aF-CoW">
+            <objects>
+                <navigationController id="voF-On-k7G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6a4-1x-hJV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nxs-Wt-Rp9" kind="relationship" relationship="rootViewController" id="iLt-E2-zTT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3j-jp-A5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="178"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N1I-Gp-pMP">
+            <objects>
+                <viewController id="nxs-Wt-Rp9" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beu-5z-ZhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="IxF-nX-xpV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7u-hC-YuP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzB-0r-E2i">
+                                <rect key="frame" x="52" y="278.5" width="272" height="30"/>
+                                <state key="normal" title="UINavController Signle line ASTextNode"/>
+                                <connections>
+                                    <action selector="singleLineClicked:" destination="nxs-Wt-Rp9" eventType="touchUpInside" id="b7l-Pd-exl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-Nq-3fO">
+                                <rect key="frame" x="58" y="358.5" width="260" height="30"/>
+                                <state key="normal" title="UINavController Multiline ASTextNode"/>
+                                <connections>
+                                    <action selector="multilineClicked:" destination="nxs-Wt-Rp9" eventType="touchUpInside" id="KQk-Od-a4d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C1a-Nq-3fO" firstAttribute="centerX" secondItem="I7u-hC-YuP" secondAttribute="centerX" id="Gl5-7O-sbg"/>
+                            <constraint firstItem="FzB-0r-E2i" firstAttribute="centerY" secondItem="I7u-hC-YuP" secondAttribute="centerY" constant="-40" id="In8-3D-aff"/>
+                            <constraint firstItem="C1a-Nq-3fO" firstAttribute="centerY" secondItem="I7u-hC-YuP" secondAttribute="centerY" constant="40" id="TYl-A1-PZo"/>
+                            <constraint firstItem="FzB-0r-E2i" firstAttribute="centerX" secondItem="I7u-hC-YuP" secondAttribute="centerX" id="i53-t8-eFk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2Z-7d-m4F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnO-vY-P6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="190"/>
+        </scene>
+    </scenes>
+</document>
